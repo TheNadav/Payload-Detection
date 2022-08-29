@@ -3,9 +3,7 @@ raw.githubusercontent.com
 github.com
 1drv.ms
 1drv.com
-docs.google.com
 drive.google.com
-.azurewebsites.net
 dropbox.com
 mega.nz
 pcloud.com
@@ -45,7 +43,6 @@ app.milanote.com
 .backblazeb2.com
 .blogspot.com
 .translate.goog
-.googleusercontent.com
 .typeform.com
 .github.io
 .web.app
