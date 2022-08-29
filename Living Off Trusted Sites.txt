@@ -41,7 +41,6 @@ onedrive.live.com
 app.milanote.com
 .appspot.com
 .wordpress.com
-.azureedge.net
 .tumblr.com
 .backblazeb2.com
 .blogspot.com
@@ -146,7 +145,6 @@ ideone.com
 4sync.com
 pastebin.pl
 www.uplooder.net
-graph.microsoft.com
 pastie.org
 .slab.com
 .dropmark.com
