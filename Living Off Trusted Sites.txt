@@ -1,6 +1,7 @@
 //Credit for Living Off Trusted Sites (LOTS) Project by mrd0x https://lots-project.com
 raw.githubusercontent.com
 github.com
+telegram
 1drv.ms
 1drv.com
 drive.google.com
