@@ -64,7 +64,6 @@ init SYSTEM "data://text/plain;base64
 SYSTEM "php:
 <title>XXE Test
 <void method="exec">
--------------------
 <!DOCTYPE xxe [<!ENTITY foo 
 <!DOCTYPE xxe
 [<!ENTITY foo 
